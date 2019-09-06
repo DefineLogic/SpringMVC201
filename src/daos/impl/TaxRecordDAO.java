@@ -58,7 +58,9 @@ public class TaxRecordDAO implements TaxRecordDAOInterface{
 	
 	//method returning uav
 	@Override
-	public float getUav(String desc, String status, String zone) {
+	public float getUav(final String desc,
+						final String status,
+						final String zone) {
 		Session session;
 
 		try {
